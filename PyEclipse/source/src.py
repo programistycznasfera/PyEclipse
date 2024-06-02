@@ -1,0 +1,24 @@
+import string
+import random
+import webbrowser
+class web_funcs:
+    def open_url(url):
+        webbrowser.open(url)
+    def check_background_browser():
+        return webbrowser.BackgroundBrowser
+    def check_base_browser():
+        return webbrowser.BaseBrowser
+class rand_strings:
+    def lowercase():
+        return string.ascii_lowercase
+    def uppercase():
+        return string.ascii_uppercase
+    def digits():
+        return string.digits
+class random_classes:
+    def rnum(num1,num2):
+        return random.randint(num1,num2)
+    def chelement(list):
+        return random.choice(list)
+    def shlist(list):
+        return random.shuffle(list)
